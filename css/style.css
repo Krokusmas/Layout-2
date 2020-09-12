@@ -39,44 +39,41 @@ body {
   color: white;
   position: relative;
 }
-.caption .btn {
-  margin: 15px 10px;
-}
-.btn,
-.btn:hover {
+.btn {
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
   touch-action: manipulation;
-  background: transparent;
   padding: 10px 25px;
-  border: 2px solid #EE3B24;
   border-radius: 20px;
-  color: #EE3B24;
+  font-weight: bold;
 }
+.btn:hover,
 .btn:active {
-  background: #EE3B24;
-  color: white;
-}
-.caption .btn-dark {
   color: white;
   background-color: #EE3B24;
 }
 .btn, input[type='submit'] {
   background: transparent;
-  transition: 0.3s;
+  border: 2px solid #EE3B24;
   color: #EE3B24;
+  transition: 0.3s;
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
 }
-.btn-dark:hover,
-.btn-dark:active {
-  color: #EE3B24;
-  background: transparent;
+.btn__dark, input[type='submit'] {
+  background: #EE3B24;
   border: 2px solid #EE3B24;
+  color: white;
   transition: 0.3s;
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
+  margin-right: 20px;
+}
+.btn__dark:hover,
+.btn__dark:active {
+  color: #EE3B24;
+  background-color: transparent;
 }
 .section-title {
   width: 100%;
@@ -104,5 +101,46 @@ body {
   background-size: cover;
   /*max-width: 100%;
   height: 100%;
-  /*width: 100px;
+  width: 100px;*/
+}
+.article-about-me {
+  font-size: 17px;
+}
+.contact-info {
+  list-style-type: none;
+  font-size: 17px;
+}
+.contact-info-item-circle {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ee3b24;
+  border-radius: 50%;
+  color: #ee3b24;
+}
+.contact-info-item p {
+  line-height: 40px;
+}
+.contact-info li p {
+  line-height: 40px;
+}
+.btn-hire-me {
+  color: black;
+  font-weight: bold;
+  background: transparent;
+}
+.btn:active,
+.btn:hover {
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  background: #ee3b24;
+  color: white;
+  transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
 }
