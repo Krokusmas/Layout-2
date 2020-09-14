@@ -17,6 +17,7 @@ body {
 .container {
   max-width: 1170px;
   height: 60px;
+  margin: auto;
 }
 .navbar-fixed-top {
   position: fixed;
@@ -47,11 +48,15 @@ body {
   padding: 10px 25px;
   border-radius: 20px;
   font-weight: bold;
+  line-height: 1.4;
 }
 .btn:hover,
 .btn:active {
   color: white;
   background-color: #EE3B24;
+}
+.btn:focus {
+  box-shadow: none;
 }
 .btn, input[type='submit'] {
   background: transparent;
@@ -72,8 +77,14 @@ body {
 }
 .btn__dark:hover,
 .btn__dark:active {
-  color: #EE3B24;
-  background-color: transparent;
+  color: #EE3B24 !important;
+  background-color: transparent !important;
+  transition: 0.3s !important;
+  -moz-transition: 0.3s !important;
+  -webkit-transition: 0.3s !important;
+}
+.btn__dark:focus {
+  box-shadow: none;
 }
 .section-title {
   width: 100%;
@@ -99,9 +110,6 @@ body {
   background-image: url(../images/8.jpg);
   height: 550px;
   background-size: cover;
-  /*max-width: 100%;
-  height: 100%;
-  width: 100px;*/
 }
 .article-about-me {
   font-size: 17px;
@@ -143,4 +151,36 @@ body {
   transition: 0.3s;
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
+}
+.my-skills-area {
+  height: 571px;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.my-skills-area__bg-image {
+  background-image: url(../images/2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  max-height: 571px;
+  background-position: center center;
+}
+.my-skills-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.7);
+}
+.my-skills-area__title {
+  color: white;
+  position: relative;
+}
+
+.my-services-area {
+  height:  500px;
+  width: 100%;
 }
