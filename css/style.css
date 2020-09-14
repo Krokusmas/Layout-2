@@ -179,8 +179,70 @@ body {
   color: white;
   position: relative;
 }
-
 .my-services-area {
   height:  500px;
   width: 100%;
 }
+.skill-title {
+  font-size: 19px;
+}
+.skill-item {
+  position: relative;
+}
+.skill-counter {
+  position: absolute;
+  font-size: 19px;
+  right: 0;
+  top: 10px;
+}
+.progress-bar-style {
+  background-color: #ee3b24;
+}
+.progress-bar__bg-dark {
+  background-color: black;
+}
+.services-list-item-logo {
+  float: left;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #ee3b24;
+  border-radius: 50%;
+  color: #ee3b24;
+  font-size: 25px;
+}
+.services-list-item p {
+  overflow: hidden;
+  line-height: 2;
+}
+.work-process-area {
+  height: 571px;
+  width: 100%;
+  position: relative;
+  color: white;
+}
+.work-process-area__bg-image {
+  background-image: url(../images/2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  max-height: 571px;
+  background-position: center center;
+}
+.work-process-area::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.7);
+}
+.work-process-area__title {
+  color: white;
+  position: relative;
+}
+
