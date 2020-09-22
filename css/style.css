@@ -448,6 +448,29 @@ body {
   line-height: 14px;
   margin-bottom: 0;
 }
+.social-links-wrapper ul li {
+  height: 30px;
+  width: 40px;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+.social-links-wrapper ul li:last-child {
+  margin-right: 0;
+}
+.social-links-wrapper ul li a {
+  display: block;
+  text-align: center;
+  line-height: 30px;
+}
+.social-links-list {
+  list-style-type: none;
+}
+.social-links-list__item {
+  font-size: 15px;
+  color: white;
+}
+
+
 
 
 /*make it responsive*/
