@@ -426,6 +426,12 @@ body {
   align-self: center;
   width: 100%;
 }
+.contact-form-button:focus,
+.contact-form-button:hover {
+  border-color: #ee3b24 !important;
+  background-color: #ee3b24 !important;
+  box-shadow: none !important;
+}
 .form-control {
   border: none;
 }
